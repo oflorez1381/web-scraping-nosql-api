@@ -85,6 +85,7 @@ Run `docker-compose build --no-cache` to build images for docker-compose, the `f
 
 3. Start web scraping and store in database
 ```bash
+pip install -r requirements.txt
 rm data/output.csv
 python3 scripts/fetch_course.py
 python3 scripts/es_insert_items.py
